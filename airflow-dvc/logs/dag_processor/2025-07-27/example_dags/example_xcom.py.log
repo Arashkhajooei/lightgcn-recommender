@@ -214,3 +214,5 @@
 {"timestamp":"2025-07-27T13:31:18.651384","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-27T13:31:49.236467","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-27T13:32:19.951676","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-27T13:32:50.189135","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-27T13:33:20.320893","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py","logger":"airflow.models.dagbag.DagBag"}
