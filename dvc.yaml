@@ -1,0 +1,13 @@
+stages:
+  train_lightgcn:
+    cmd: python scripts/train_lightgcn.py
+    deps:
+      - scripts/train_lightgcn.py
+      - data/Ratings.csv
+    outs:
+      - artifacts/embeddings.pt
+      - artifacts/metrics_plot.png
+      - models/lightgcn_model.pt
+    metrics:
+      - artifacts/metrics.json:
+          cache: false

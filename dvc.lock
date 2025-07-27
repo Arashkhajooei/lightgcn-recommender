@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  train_lightgcn:
+    cmd: python scripts/train_lightgcn.py
+    deps:
+    - path: data/Ratings.csv
+      hash: md5
+      md5: 8d205232d15618f2c27caf5e3ea4e375
+      size: 22633892
+    - path: scripts/train_lightgcn.py
+      hash: md5
+      md5: ab91c52045878efa5cd80f6ac089db4c
+      size: 8150
+    outs:
+    - path: artifacts/embeddings.pt
+      hash: md5
+      md5: cbbc090428abfbce680002ad8dddba6f
+      size: 57934974
+    - path: artifacts/metrics.json
+      hash: md5
+      md5: a4c9824f813f3a9386ecec871544731a
+      size: 97
+    - path: artifacts/metrics_plot.png
+      hash: md5
+      md5: 1bd8d2415cc9b26a34c57b0ee73c444c
+      size: 2398
+    - path: models/lightgcn_model.pt
+      hash: md5
+      md5: caf96dbdc5fdf449478f53f710bfa778
+      size: 50656797
