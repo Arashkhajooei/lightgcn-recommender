@@ -217,3 +217,4 @@
 {"timestamp":"2025-07-27T13:33:00.706732","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/standard/example_sensors.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-27T13:33:30.863745","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/standard/example_sensors.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-27T13:34:01.011511","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/standard/example_sensors.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-27T13:34:31.277405","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/standard/example_sensors.py","logger":"airflow.models.dagbag.DagBag"}
