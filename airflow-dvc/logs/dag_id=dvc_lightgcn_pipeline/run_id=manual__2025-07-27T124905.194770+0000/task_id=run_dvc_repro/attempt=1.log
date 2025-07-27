@@ -1,0 +1,26 @@
+{"timestamp":"2025-07-27T12:50:00.606671","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-27T12:50:00.607210","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dvc_lightgcn_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-27T12:50:00.681315Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:00.682286Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:00.682948Z","level":"info","event":"Current task name:run_dvc_repro","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:00.683475Z","level":"info","event":"Dag name:dvc_lightgcn_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:00.682156","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:00.683025","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/lightgcn-recommender && dvc repro']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:00.692977","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:02.661483","level":"info","event":"'data/Ratings.csv.dvc' didn't change, skipping","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:03.630437","level":"info","event":"Stage 'train_lightgcn' is cached - skipping run, checking out outputs","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.083594","level":"info","event":"Updating lock file 'dvc.lock'","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.093073","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.093272","level":"info","event":"To track the changes with git, run:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.093392","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.093490","level":"info","event":"\tgit add dvc.lock","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.093595","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.093689","level":"info","event":"To enable auto staging, run:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.093780","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.093873","level":"info","event":"\tdvc config core.autostage true","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.098872","level":"info","event":"Use `dvc push` to send your updates to remote storage.","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.318617","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:08.319590","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01984bed-fecc-7378-a9ad-8d86d035c879'), task_id='run_dvc_repro', dag_id='dvc_lightgcn_pipeline', run_id='manual__2025-07-27T12:49:05.194770+00:00', try_number=1, map_index=-1, hostname='c90057e68cf0', context_carrier={}, task=<Task(BashOperator): run_dvc_repro>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 7, 27, 12, 49, 57, 813199, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/dvc_lightgcn_pipeline/runs/manual__2025-07-27T12%3A49%3A05.194770%2B00%3A00/tasks/run_dvc_repro?try_number=1')","logger":"task"}
+{"timestamp":"2025-07-27T12:50:08.359932Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:08.360659Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:08.361084Z","level":"info","event":"Task operator:<Task(BashOperator): run_dvc_repro>","chan":"stdout","logger":"task"}

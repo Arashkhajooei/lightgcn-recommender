@@ -1,0 +1,15 @@
+{"timestamp":"2025-07-27T12:50:12.065867","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-27T12:50:12.066575","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dvc_lightgcn_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-27T12:50:12.104328Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:12.105059Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:12.105540Z","level":"info","event":"Current task name:push_dvc_outputs","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:12.105889Z","level":"info","event":"Dag name:dvc_lightgcn_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:12.105332","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:12.106408","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/lightgcn-recommender && dvc push']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:12.118620","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:16.388318","level":"info","event":"5 files pushed","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:16.541479","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-07-27T12:50:16.542440","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01984bed-fece-7d80-b770-268856c36a3d'), task_id='push_dvc_outputs', dag_id='dvc_lightgcn_pipeline', run_id='manual__2025-07-27T12:49:05.194770+00:00', try_number=1, map_index=-1, hostname='c90057e68cf0', context_carrier={}, task=<Task(BashOperator): push_dvc_outputs>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 7, 27, 12, 50, 11, 561884, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/dvc_lightgcn_pipeline/runs/manual__2025-07-27T12%3A49%3A05.194770%2B00%3A00/tasks/push_dvc_outputs?try_number=1')","logger":"task"}
+{"timestamp":"2025-07-27T12:50:16.571887Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:16.572556Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-27T12:50:16.573566Z","level":"info","event":"Task operator:<Task(BashOperator): push_dvc_outputs>","chan":"stdout","logger":"task"}

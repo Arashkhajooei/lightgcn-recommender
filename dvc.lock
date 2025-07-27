@@ -7,10 +7,12 @@ stages:
       hash: md5
       md5: 8d205232d15618f2c27caf5e3ea4e375
       size: 22633892
+      isexec: true
     - path: scripts/train_lightgcn.py
       hash: md5
       md5: ab91c52045878efa5cd80f6ac089db4c
       size: 8150
+      isexec: true
     outs:
     - path: artifacts/embeddings.pt
       hash: md5

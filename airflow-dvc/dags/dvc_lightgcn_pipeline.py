@@ -19,7 +19,7 @@ with dag:
 
     run_eval = BashOperator(
         task_id='run_evaluation',
-        bash_command='cd /opt/airflow/lightgcn-recommender && python evaluate.py',
+        bash_command='cd /opt/airflow/lightgcn-recommender && python scripts/evaluate.py',
         dag=dag,
     )
 
